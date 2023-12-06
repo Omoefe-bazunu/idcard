@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomizeYourID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col bg-red-50 gap-y-9 items-center">
+<header class="w-full h-11 bg-green-700 text-center text-white flex items-center justify-center" ><a href="index.html">Back to Main Page</a></header>
+<div class="flex w-5/6 flex-col items-center gap-y-5 py-5 md:p-0 ">
+    <div class="w-full text-center text-black flex items-center justify-center">
+        <h2 class="border-b-2 border-black font-bold">EDITING PAGE</h2>
+    </div>
+    <div class="w-full">
+        <div class="w-full FRONT-VIEW flex flex-wrap flex-col">
+            <div class="w-full text-black flex">
+                <h2 class="border-b-2 border-black font-bold">FRONT VIEW</h2>
+            </div>
+            <form class="details flex flex-wrap">
+                <div class="left flex flex-col justify-center">
+                    <label for="logo" class="w-full py-2">Company logo</label>
+                    <input type="file" class="border border-rounded-lg p-y-2 p-x-2 bg-white mb-2" id="logo" name="Logo-image" accept="image/*" multiple>
+                    <label for="passport" class="w-full py-2">Staff passport</label>
+                    <input type="file" class="border border-rounded-lg p-y-2 p-x-2 bg-white mb-2" id="passport" name="Passport-image" accept="image/*" multiple>
+                    <label for="firstName" class="w-full py-2">First Name</label>
+                    <input type="text" class="border border-rounded-lg p-y-2 p-x-2 bg-red-400 mb-2" id="firstName" name="Firstname" value="Firstname" placeholder="e.g Anthony">
+                    <label for="lastName" class="w-full py-2">Last Name</label>
+                    <input type="text" id="lastName" name="Lastname" value="Lastname" placeholder="e.g Hampshire">
+                </div>
+                <div class="right flex flex-col gap-y-5 justify-center">
+                    <label for="logo" class="w-full py-2"></label>
+                    <input type="file" class="border border-rounded-lg p-y-2 p-x-2 bg-white mb-2" id="logo" name="Logo-image" accept="image/*" multiple>
+                    <label for="staff-email" class="w-full py-2">Email address</label>
+                    <input type="email" id="staff-email" name="staff-email" placeholder="andrewpat@gmail.com">
+                    <label for="staff-signature" class="w-full py-2">Staff signature</label>
+                    <input type="file" class="border border-rounded-lg p-y-2 p-x-2 bg-white mb-2" id="staff-signature" name="staff-signature" accept="image/*" multiple>
+                    <label for="staff-position" class="w-full py-2">Staff position</label>
+                    <input type="text" id="staff-position" name="staff-position" value="staff-position" placeholder="e.g Senior Manager">
+                </div>
+
+            </form>
+        </div>
+        <div></div>
+    </div>
+</div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
