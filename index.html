@@ -7,23 +7,50 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="reset.css">
 </head>
-<body class="flex flex-col bg-red-50 justify-between items-center gap-y-9 relative">
-    <header class = "w-11/12 md:w-full h-12 text-sm md:text-base bg-red-700 text-white text-center flex items-center justify-center sticky top-0" >GET CUSTOMIZED ID CARDS FOR YOUR TEAM</header>
-    <Main class="flex w-5/6 h-auto gap-x-9 justify-center flex-wrap items-center gap-y-2 py-5 md:p-0">
-        <div class="card w-60 h-80 bg-red-400 rounded-sm shadow-md">
-            
+<body class="flex flex-col bg-orange-50 justify-between items-center gap-y-20">
+    <header class = "w-11/12 w-full h-12 text-sm md:text-base bg-indigo-600 font-bold text-white text-center flex items-center justify-center sticky top-0" >GET CUSTOMIZED ID CARDS FOR YOUR TEAM</header>
+    <Main class="flex w-5/6 gap-x-9 justify-center flex-wrap items-center gap-y-5 py-2 md:py-0">
+        <div class="front-card w-60 h-80 bg-red-400 rounded-sm shadow-md flex" id="front">
+            <div class="left bg-blue-400 w-8 flex px-3">
+                <div class="w-0.5 bg-white flex"></div>
+            </div>
+            <div class="right bg-white w-full py-2 flex flex-col gap-y-1 justify-center items-center">
+                <hr class="w-full h-0.5 bg-blue-400">
+                <div class="w-14 h-14 rounded-full bg-black company-logo"></div>
+                <div class="w-24 h-24 rounded-full  bg-black staff-passport"></div>
+                <div class="flex justify-center items-center flex-col flex-grow">
+                <p class="uppercase">Staff name</p>
+                <p class="text-xs">Staff position</p>
+                <p class="text-xs mt-3">Staff contact number</p>
+                <p class="text-xs">Staff email address</p>
+                <div class="w-24 h-8 rounded-sm bg-white mt-2 Signature"></div>
+                </div>
+                <hr class="w-full h-0.5 bg-blue-400">
+            </div>
+        </div>
+        <div class="Back-card w-60 h-80 bg-white rounded-sm shadow-md flex p-4" id="back">
+            <div class="right bg-0 border-black border-2 w-full py-2 px-4 flex flex-col gap-y-1 justify-center items-center">
+                <p class="text-xs text-center break-words">Certification text: <br> Lorem ipsum aliquid at modi Quam, quis? Quo eum at architecto netur perspiciatis
+                </p>
+                <p class=" mt-2">COMPANY NAME</p>
+                <p class="text-xs text-center break-words">No 2, Old Layout Road, WestNorm Street, Kambrin State. </p>
+                <p class="text-xs mt-3">0810xxxxxxx; 0904xxxxxxx</p>
+                <p class="text-xs">company-email2gmail.com</p>
+                <div class="w-24 h-8 rounded-sm bg-white mt-2 Signature"></div>
+                <p class="text-xs italic">Authorized email</p>
+            </div>
         </div>
         <div class="w-60 h-96 flex items-center justify-center flex-col gap-y-9">
-           <a class="w-full h-11 text-base bg-red-500 text-center text-white flex items-center justify-center" href="">DOWNLOAD</a>
-           <a class="w-full h-11 text-base bg-red-700 text-center text-white flex items-center justify-center" href="editpage.html">GO TO EDITING PAGE</a>
-           <a class="w-full h-11 ext-base bg-green-700 text-center text-white flex items-center justify-center" href="">GET MORE TEMPLATES</a>
+           <a class="w-full h-11 text-base border rounded-lg bg-emerald-600 text-center text-white flex items-center justify-center cursor-pointer" id="downloadBtn" href="">DOWNLOAD</a>
+           <a class="w-full h-11 text-base border rounded-lg bg-red-600 text-center text-white flex items-center justify-center" href="editpage.html">GO TO EDITING PAGE</a>
+           <a class="w-full h-11 text-base border rounded-lg bg-red-800 text-center text-white flex items-center justify-center" href="templates.html">GET MORE TEMPLATES</a>
         </div>
     </Main>
-    <footer class = "w-8/12 h-6  bg-black text-white text-center flex items-center justify-center " >
-        Follow me on X : 
+    <footer class = "w-8/12 h-6 md:mt-9 bg-neutral-700 text-center text-white items-center justify-center cursor-pointer" >
+        <a href="https://twitter.com/raniem57?s=09" target="_blank"> Follow me on X : @raniem57 </a>
     </footer>
 
-
- <script src="script.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>   
+ <script src="frontpage.js"></script>
 </body>
 </html>
