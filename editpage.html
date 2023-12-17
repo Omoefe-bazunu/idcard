@@ -14,30 +14,30 @@
     </div>
     <div class="w-full flex flex-col gap-y-9 justify-center items-center">
         <div class="w-full FRONT-VIEW flex flex-wrap flex-col mt-5 gap-y-5">
-            <div class="w-full text-black flex items-center justify-center">
+            <div class="w-full text-black flex items-center justify-center ">
                 <h2 class="border-b-2 border-black text-indigo-600 font-bold">FRONT VIEW</h2>
             </div>
-            <form class="details flex flex-wrap justify-between items-center gap-y-5 gap-x-12">
-                <div class="left flex flex-col justify-center flex-grow">
-                    <label for="logo" class="w-full py-2">Company logo</label>
+            <form class="w-full details flex flex-wrap justify-between items-center gap-y-5 gap-x-12 ">
+                <div class="left flex flex-col justify-center flex-grow w-full md:w-auto">
+                    <label for="logo" class="w-full py-2" >Company logo</label>
                     <input type="file" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="logo" name="Logo-image" accept="image/*" multiple>
+                    <label for="companyName" class="w-full py-2">Company Name</label>
+                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="companyName" name="F-companyName" placeholder="Company ltd">
                     <label for="passport" class="w-full py-2">Staff passport</label>
                     <input type="file" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="passport" name="Passport-image" accept="image/*" multiple>
-                    <label for="firstName" class="w-full py-2">First Name</label>
-                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="firstName" name="Firstname" placeholder="e.g Anthony">
-                    <label for="lastName" class="w-full py-2">Last Name</label>
-                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="lastName" name="Lastname"  placeholder="e.g Hampshire">
+                    <label for="staffName" class="w-full py-2">Staff Name</label>
+                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="staffName" name="staffName"  placeholder="e.g Hampshire Anthony">
                 </div>
-                <div class="right flex flex-col justify-center flex-grow">
+                <div class="right flex flex-col justify-center flex-grow w-full md:w-auto">
                     <label for="staffNumber" class="w-full py-2"> Contact Number</label>
-                    <div class="flex gap-x-1" >
-                        <select name="country-code" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md">
+                    <div class="flex gap-x-1 flex-wrap" >
+                        <select name="country-code" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="country-code">
                             <option value="NIG">+234</option>
                             <option value="NIG">+1</option>
                             <option value="NIG">+214</option>
                             <option value="NIG">+14</option>
                         </select>
-                        <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="staffNumber" name="staffNumber" placeholder="e.g 810xxxxxx">  
+                        <input type="text" class="w-full md:w-auto rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="staffNumber" name="staffNumber" placeholder="e.g 810xxxxxx">  
                     </div>
                     <label for="staff-email" class="w-full py-2">Email address</label>
                     <input type="email" class="rounded-lg py-1 pl-2 focus:outline-none bg-white mb-2 rounded-md placeholder-black" id="staff-email" name="staff-email" placeholder="andrewpat@gmail.com">
@@ -46,49 +46,43 @@
                     <label for="staff-position" class="w-full py-2">Staff position</label>
                     <input type="text" class="rounded-lg py-1 pl-2 bg-white focus:outline-none mb-2 rounded-md placeholder-black" id="staff-position" name="staff-position"  placeholder="e.g Senior Manager">
                 </div>
-                <div class="w-full  flex justify-center items-center"><button class="w-44 h-11 text-base  rounded-lg bg-emerald-600 text-center text-white flex items-center justify-center"> See how it looks</button></div>
-
+                <div class="w-full  flex justify-center items-center"><button class="w-44 h-11 text-base  rounded-lg bg-emerald-600 text-center text-white flex items-center justify-center" id="frontBtn" > See how it looks</button></div>
             </form>
         </div>
         <div class="w-full BACK-VIEW flex flex-wrap flex-col gap-y-5">
             <div class="w-full text-black flex items-center justify-center">
                 <h2 class="border-b-2 border-black font-bold cursor-pointer text-indigo-600 ">BACK VIEW</h2>
             </div>
-            <form class="details flex flex-wrap justify-between items-center gap-y-5 gap-x-12">
-                <div class="left flex flex-col justify-center flex-grow">
-                    <label for="Certification-text" class="w-full py-2 ">Certification text</label>
-                    <textarea id="about" name="about" rows="12" class="rounded-lg focus:outline-none py-1.5 pl-2" placeholder="Text goes here"></textarea>
+            <form class="details flex flex-wrap justify-between items-center gap-y-5 gap-x-12 w-full">
+                <div class="left flex flex-col justify-center flex-grow w-full md:w-auto">
+                    <label for="certificationText" class="w-full py-2">Certification text</label>
+                    <textarea id="certificationText" name="about" rows="12" class="rounded-lg focus:outline-none py-1.5 pl-2" placeholder="Text goes here"></textarea>
+                </div>
+                <div class="right flex flex-col justify-center flex-grow w-full md:w-auto">
                     <label for="company-name" class="w-full py-2 ">Company Name</label>
                     <input type="company-name" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-name" name="company-name" placeholder="XYZ Ltd">
-                </div>
-                <div class="right flex flex-col justify-center flex-grow ">
                     <label for="company-address" class="w-full py-2">Company address</label>
                     <input type="company-address" class="rounded-lg py-1 pl-2 bg-white focus:outline-none mb-2 rounded-md placeholder-black" id="company-address" name="company-address" placeholder="e.g 23, Old layout Road, Lad City">
                     <label for="staffNumber" class="w-full py-2"> Contact Number</label>
-                    <div class="flex" >
-                        <select name="country-code" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md">
+                    <div class="flex gap-x-1 flex-wrap" >
+                        <select name="country-code" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="b-country-code">
                             <option value="NIG">+234</option>
                             <option value="NIG">+1</option>
                             <option value="NIG">+214</option>
                             <option value="NIG">+14</option>
                         </select>
-                        <input type="text" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="staffNumber" name="staffNumber" placeholder="e.g 810xxxxxx">  
+                        <input type="text" class="w-full md:w-auto rounded-lg py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="companyPhoneNumber" name="companyPhoneNumber" placeholder="e.g 810xxxxxx">  
                     </div>
                     <label for="company-email" class="w-full py-2">Company email</label>
                     <input type="company-email" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-email" name="company-email" placeholder="e.g xyz@gmail.com">
-                    <label for="company-contact" class="w-full py-2">Company Contact Number</label>
-                    <input type="company-contact" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-contact" name="company-contact" placeholder="e.g 081xxxxxxx">
                     <label for="company-signature" class="w-full py-2">Company Signature</label>
                     <input type="file" class="rounded-lg py-1 pl-2 focus:outline-none bg-white mb-2 rounded-md" id="company-signature" name="company-signature" accept="image/*" multiple>
                 </div>
-                <div class="w-full  flex justify-center items-center"><button class="w-44 h-11 text-base  rounded-lg bg-emerald-600 text-center text-white flex items-center justify-center"> See how it looks</button></div>
+                <div class="w-full  flex justify-center items-center mb-5"><button class="w-44 h-11 text-base  rounded-lg bg-emerald-600 text-center text-white flex items-center justify-center" id="backBtn"> See how it looks</button></div>
             </form>
         </div>
-        <div></div>
     </div>
 </div>
-
-
- <script src="script.js"></script>
+ <script src="editpage.js"></script>
 </body>
 </html>
