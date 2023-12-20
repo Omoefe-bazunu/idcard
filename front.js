@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const companyE = localStorage.getItem('cEmail');
     const companySig = localStorage.getItem('cSignature');
 
-    alert("HI, CLASS" + " " + certText + " " + bcompanyName + " " + companyA 
+    alert(companyL + " " + companyN + " " + staffP 
+    + " " + staffName + " " + staffPosition + " " + staffContact + " " + staffEmail + " " + 
+    staffSig + " " + certText  + " " + bcompanyName + " " + companyA 
     + " " + companyC + " " + companyE + " " + companySig);
 
 });
