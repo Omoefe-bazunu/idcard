@@ -87,11 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const companyEmail = document.querySelector('#company-email').value;
     
 
-    // if(!companyName) {
-    //     window.location.href = 'editpage.html';
-    //     alert("Please input data before clicking button");
-
-    // } else {
 
     //code to store the front page input for transfer to front page
     
@@ -109,6 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.setItem('cEmail', companyEmail);
 
     window.location.href = 'index.html';
-// };
-    };
+};
+
 

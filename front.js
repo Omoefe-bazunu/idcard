@@ -51,38 +51,37 @@ document.addEventListener('DOMContentLoaded', function() {
  
 // //DOWNLOAD CODE
 
-// // Add an event listener to the download button for the front div
-// document.getElementById('downloadBtn').addEventListener('click', function() {
-//     // Call the function to convert and download the front div as an image
-//     downloadAsImage('front');
-// });
+const downloadButton = document.getElementById("downloadBtn");
+const front = document.getElementById("front");
+const backdownloadButton = document.getElementById("backdownloadBtn");
+const back = document.getElementById("back");
 
-// // // Add an event listener to the download button for the back div
-// // document.getElementById('downloadBackAsImage').addEventListener('click', function() {
-// //     // Call the function to convert and download the back div as an image
-// //     downloadAsImage('back');
-// // });
+downloadButton.addEventListener("click", () => {
+    html2canvas(front, {
+      allowTaint: true,
+      useCORS: true,
+      letterRendering: true,
+      scale: 2, // Increase resolution by 2x
+    }).then((canvas) => {
+      const link = document.createElement("a");
+      link.download = "downloaded_image.jpg";
+      link.href = canvas.toDataURL("image/jpeg");
+      link.click();
+    });
+  });
 
-// // Function to convert and download the div content as an image
-// function downloadAsImage(divId) {
-//     const frontPage = document.getElementById('front');
+  backdownloadButton.addEventListener("click", () => {
+    html2canvas(back, {
+      allowTaint: true,
+      useCORS: true,
+      letterRendering: true,
+      scale: 2, // Increase resolution by 2x
+    }).then((canvas) => {
+      const link = document.createElement("a");
+      link.download = "downloaded_image.jpg";
+      link.href = canvas.toDataURL("image/jpeg");
+      link.click();
+    });
+  });
 
-//     html2canvas(frontPage).then(function(canvas) {
-//         // Convert canvas to image
-//         const image = canvas.toDataURL('image/png'); // Change format to 'image/jpeg' for JPEG format
 
-//         // Create a temporary link element
-//         const downloadLink = document.createElement('a');
-//         downloadLink.href = image;
-//         downloadLink.download = `${divId}_image.png`; // Change extension to '.jpg' for JPEG format
-
-//         // Append the link to the body
-//         document.body.appendChild(downloadLink);
-
-//         // Trigger the download
-//         downloadLink.click();
-
-//         // Remove the temporary link from the DOM
-//         document.body.removeChild(downloadLink);
-//     });
-// }

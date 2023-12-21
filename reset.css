@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+#front *, #back * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 
 
