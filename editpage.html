@@ -22,11 +22,11 @@
                     <label for="logo" class="w-full py-2" >Company logo</label>
                     <input type="file" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="logo" name="Logo-image" accept="image/*" multiple>
                     <label for="companyName" class="w-full py-2">Company Name</label>
-                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="companyName" name="F-companyName" placeholder="Company ltd">
+                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="companyName" name="F-companyName" placeholder="Company ltd" value="Phenomenal World Trade">
                     <label for="passport" class="w-full py-2">Staff passport</label>
                     <input type="file" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="passport" name="Passport-image" accept="image/*" multiple>
                     <label for="staffName" class="w-full py-2">Staff Name</label>
-                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="staffName" name="staffName"  placeholder="e.g Hampshire Anthony">
+                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="staffName" name="staffName"  placeholder="e.g Hampshire Anthony" value="Omoefe Bazunu">
                 </div>
                 <div class="right flex flex-col justify-center flex-grow w-full md:w-auto">
                     <label for="staffNumber" class="w-full py-2"> Contact Number</label>
@@ -37,14 +37,14 @@
                             <option value="+214">+214</option>
                             <option value="+14">+14</option>
                         </select>
-                        <input type="number" class="w-full md:w-auto rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="staffNumber" name="staffNumber" placeholder="e.g 810xxxxxx">  
+                        <input type="number" class="w-full md:w-auto rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="staffNumber" name="staffNumber" placeholder="e.g 810xxxxxx" value="9043970401">  
                     </div>
                     <label for="staff-email" class="w-full py-2">Email address</label>
-                    <input type="email" class="rounded-lg py-1 pl-2 focus:outline-none bg-white mb-2 rounded-md placeholder-black" id="staff-email" name="staff-email" placeholder="andrewpat@gmail.com">
+                    <input type="email" class="rounded-lg py-1 pl-2 focus:outline-none bg-white mb-2 rounded-md placeholder-black" id="staff-email" name="staff-email" placeholder="andrewpat@gmail.com"  >
                     <label for="staff-signature" class="w-full py-2">Staff signature</label>
                     <input type="file" class="rounded-lg py-1 pl-2 focus:outline-none bg-white mb-2 rounded-md" id="staff-signature" name="staff-signature" accept="image/*" multiple>
                     <label for="staff-position" class="w-full py-2">Staff position</label>
-                    <input type="text" class="rounded-lg py-1 pl-2 bg-white focus:outline-none mb-2 rounded-md placeholder-black" id="staff-position" name="staff-position"  placeholder="e.g Senior Manager">
+                    <input type="text" class="rounded-lg py-1 pl-2 bg-white focus:outline-none mb-2 rounded-md placeholder-black" id="staff-position" name="staff-position"  placeholder="e.g Senior Manager" value="Backend-Staff">
                 </div>
                 <div class="w-full  flex justify-center items-center"><button class="w-44 h-11 text-base  rounded-lg bg-emerald-600 text-center text-white flex items-center justify-center" id="frontBtn" > See how it looks</button></div>
             </form>
@@ -56,14 +56,14 @@
             <form class="details flex flex-wrap justify-between items-center gap-y-5 gap-x-12 w-full">
                 <div class="left flex flex-col justify-center flex-grow w-full md:w-auto">
                     <label for="certificationText" class="w-full py-2">Certification text</label>
-                    <textarea id="certificationText" name="about" rows="12" class="rounded-lg focus:outline-none py-1.5 pl-2" placeholder="Text goes here"></textarea>
+                    <textarea id="certificationText" name="about" rows="12" class="rounded-lg focus:outline-none py-1.5 px-2 text-sm" placeholder="Text goes here" >This is to certify that the bearer of this card whose details appear on the front page is a staff of our organization. Kindly give him free access. Thank you</textarea>
                 </div>
                 <div class="right flex flex-col justify-center flex-grow w-full md:w-auto">
                     <label for="company-name" class="w-full py-2 ">Company Name</label>
-                    <input type="company-name" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-name" name="company-name" placeholder="XYZ Ltd">
+                    <input type="text" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-name" name="company-name" placeholder="XYZ Ltd" value="PHENOMENAL WORLD TRADE">
                     <label for="company-address" class="w-full py-2">Company address</label>
-                    <input type="company-address" class="rounded-lg py-1 pl-2 bg-white focus:outline-none mb-2 rounded-md placeholder-black" id="company-address" name="company-address" placeholder="e.g 23, Old layout Road, Lad City">
-                    <label for="staffNumber" class="w-full py-2"> Contact Number</label>
+                    <input type="text" class="rounded-lg py-1 pl-2 bg-white focus:outline-none mb-2 rounded-md placeholder-black" id="company-address" name="company-address" placeholder="e.g 23, Old layout Road, Lad City" value="20, Staff Quarters Road, Otefe-Oghara, Delta State.">
+                    <label for="companyPhoneNumberr" class="w-full py-2"> Contact Number</label>
                     <div class="flex gap-x-1 flex-wrap" >
                         <select name="country-code" class="rounded-lg py-1 pl-2 bg-white mb-2 rounded-md" id="b-country-code">
                             <option value="+234">+234</option>
@@ -71,10 +71,10 @@
                             <option value="+214">+214</option>
                             <option value="+14">+14</option>
                         </select>
-                        <input type="number" class="w-full md:w-auto rounded-lg py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="companyPhoneNumber" name="companyPhoneNumber" placeholder="e.g 810xxxxxx">  
+                        <input type="number" class="w-full md:w-auto rounded-lg py-1 pl-2 bg-white mb-2 rounded-md flex-grow placeholder-black" id="companyPhoneNumber" name="companyPhoneNumber" placeholder="e.g 810xxxxxx" value="8106773690">  
                     </div>
                     <label for="company-email" class="w-full py-2">Company email</label>
-                    <input type="company-email" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-email" name="company-email" placeholder="e.g xyz@gmail.com">
+                    <input type="email" class="rounded-lg focus:outline-none py-1 pl-2 bg-white mb-2 rounded-md placeholder-black" id="company-email" name="company-email" placeholder="e.g xyz@gmail.com" value="phenomenalwt03@gmail.com">
                     <label for="company-signature" class="w-full py-2">Company Signature</label>
                     <input type="file" class="rounded-lg py-1 pl-2 focus:outline-none bg-white mb-2 rounded-md" id="company-signature" name="company-signature" accept="image/*" multiple>
                 </div>
